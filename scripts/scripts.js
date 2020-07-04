@@ -7,7 +7,7 @@ var typer = {
        word: document.querySelector('.myWord')
     },
     init: function init() {
-       this.typeLetter();
+      this.typeLetter();
     },
     typeLetter: function typeLetter() {
        var _this = this;
@@ -50,5 +50,5 @@ var typer = {
        }, this.nextWordWait);
     }
  };
- 
+
  typer.init();

@@ -19,6 +19,18 @@ body {
 #protfolio-container {
     text-align: center;
     margin: auto;
+    animation: fadeIn ease-in 1s;
+}
+
+@keyframes fadeIn {
+    from {
+		opacity: 0;
+		transform: translate3d(0, -10%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }
 
 /* on my phone */
@@ -68,4 +80,17 @@ main {
 
 #footer-links {
     margin: 0 auto;
+    
+}
+
+#connect {
+    animation: footer-fadeIn ease-out 1s;
+}
+
+@keyframes footer-fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 } 
 }

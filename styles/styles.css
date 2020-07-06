@@ -8,6 +8,26 @@ body {
     overflow: auto;
 }
 
+/***************
+
+Navigation Style 
+
+****************/
+
+#fp-nav ul li .fp-tooltip.fp-right {
+    top: -7px;
+    color: rgb(208, 199, 199);
+}
+
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+    background: rgb(208, 199, 199);
+}
+
+/***************
+
+Main Style  
+
+***************/
 #protfolio-body {
     display: flex;
     height: 100%;
@@ -48,7 +68,7 @@ p, div {
 }
 
 /* on the projector  */
-@media screen and (min-width: 70.0rem) {
+@media screen and (min-width: 1000px) {
     #protfolio-body h1 {
         font-size: 3.6rem;
     }
@@ -93,4 +113,140 @@ main {
         transform: translateY(100%);
     }
     to { opacity: 1 } 
+}
+
+
+/***************
+
+Section Style
+
+***************/
+
+.section {
+    color: white;
+}
+
+/***************
+
+Section 2  
+
+***************/
+
+#section2 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.s2 {
+    text-align: center;
+    font-family: monospace;
+    width: 80%;
+}
+
+.s2 h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.s2 p {
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 1.8;
+}
+
+span.word {
+    text-transform: uppercase;
+    position: relative;
+}
+
+span.word::after {
+    background-color: purple;
+    content: " ";
+    height: 50%;
+    position: absolute;
+    left: 0;
+    margin-left: -1rem;
+    top: 65%;
+    width: calc(100% + 2rem);
+    z-index: -1;
+}
+
+
+/***************
+
+Section 4  
+
+***************/
+
+.s4 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.s4 p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* 
+
+3D Cube Animation 
+
+*/
+
+.scene {
+    width: 200px;
+    height: 200px;
+    margin: 80px;
+    perspective: 400px;
+}
+
+.cube {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+.cube__face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+/* .cube__face--front  { background: hsla(  0, 100%, 50%, 0.7); }
+.cube__face--right  { background: hsla( 60, 100%, 50%, 0.7); }
+.cube__face--back   { background: hsla(120, 100%, 50%, 0.7); }
+.cube__face--left   { background: hsla(180, 100%, 50%, 0.7); }
+.cube__face--top    { background: hsla(240, 100%, 50%, 0.7); }
+.cube__face--bottom { background: hsla(300, 100%, 50%, 0.7); } */
+
+.cube__face--front  { transform: rotateY(  0deg) translateZ(100px); }
+.cube__face--right  { transform: rotateY( 90deg) translateZ(100px); }
+.cube__face--back   { transform: rotateY(180deg) translateZ(100px); }
+.cube__face--left   { transform: rotateY(-90deg) translateZ(100px); }
+.cube__face--top    { transform: rotateX( 90deg) translateZ(100px); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+
+.cube.is-spinning {
+animation: spinCube 8s infinite ease-in-out;
+}
+
+@keyframes spinCube {
+    0% { transform: translateZ(-100px) rotateX(  0deg) rotateY(  0deg); }
+    100% { transform: translateZ(-100px) rotateX(360deg) rotateY(360deg); }
 }

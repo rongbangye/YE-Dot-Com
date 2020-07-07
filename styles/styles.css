@@ -128,12 +128,12 @@ Section Style
 
 /***************
 
-Section 2  
+Section 2  About Me
 
 ***************/
 
 #section2 {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -158,20 +158,20 @@ Section 2
 .show {
     /* opacity: 1;
     transition: opacity 500ms; */
-    animation: showFadeIn ease-in 0.5s;
+    animation: showFadeIn ease-in 1s;
 }
 
 @keyframes showFadeIn {
     0% {
-        opacity:0;
-        transform: translateX(-30px);
+        opacity:0.1;
+        /* transform: translateY(100%); */
     }
     50% {
-        opacity:0.5;
+        opacity: 0.5;
     }
     100% {
         opacity:1;
-        transform: translateX(0);
+        /* transform: translateX(0); */
     }
 }
 
@@ -182,7 +182,6 @@ Section 2
 }
 
 span.word {
-    text-transform: uppercase;
     position: relative;
 }
 
@@ -197,6 +196,36 @@ span.word::after {
     width: calc(100% + 2rem);
     z-index: -1;
 }
+
+/***************
+
+Section 3 Projects 
+
+***************/
+
+.s3 {
+    text-align: center;
+}
+
+.s3 video {
+    outline: none;
+}
+
+.s3 .project-des {
+    font-family: monospace;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.s3 p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+
+
 
 
 /***************

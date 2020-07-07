@@ -151,6 +151,30 @@ Section 2
     margin-bottom: 0;
 }
 
+.hide {
+    opacity: 0;
+}
+
+.show {
+    /* opacity: 1;
+    transition: opacity 500ms; */
+    animation: showFadeIn ease-in 0.5s;
+}
+
+@keyframes showFadeIn {
+    0% {
+        opacity:0;
+        transform: translateX(-30px);
+    }
+    50% {
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
 .s2 p {
     font-weight: 400;
     font-size: 1.7rem;

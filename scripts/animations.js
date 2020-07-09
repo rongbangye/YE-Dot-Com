@@ -19,4 +19,3 @@ new fullpage('#fullpage', {
         }
     }
 });
-

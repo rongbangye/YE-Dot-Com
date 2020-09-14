@@ -358,6 +358,7 @@ header a svg {
   transition: opacity 0.3s ease-out;
 }
 
+/*********** Work Section ***********/
 #work .wrapper {
   position: relative;
 }

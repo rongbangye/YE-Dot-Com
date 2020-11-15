@@ -9,15 +9,15 @@
 }
 
 @font-face {
-  font-family: "Futura";
-  src: url("../fonts/Futura-Boo.woff") format("woff");
+  font-family: 'Futura';
+  src: url('../fonts/Futura-Boo.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Futura";
-  src: url("../fonts/Futura-Dem.woff") format("woff");
+  font-family: 'Futura';
+  src: url('../fonts/Futura-Dem.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-family: 'Futura', Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 1.8rem;
   color: var(--white);
@@ -90,6 +90,7 @@ p.big {
   font-size: 4rem;
   line-height: 1.2;
   opacity: 1;
+  font-weight: normal;
 }
 
 ul {
@@ -110,6 +111,7 @@ a.btn {
   text-align: center;
   background-color: var(--orange);
   color: #100f0e;
+  font-size: 1.4rem;
 }
 
 .link {
@@ -119,7 +121,7 @@ a.btn {
   position: relative;
 }
 .link::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -189,7 +191,7 @@ section {
   top: -1rem;
 }
 .tag span::before {
-  content: "";
+  content: '';
   position: absolute;
   right: calc(100% + 1rem);
   top: 33%;
@@ -328,7 +330,7 @@ nav .wrapper {
   justify-content: space-between;
 }
 nav .logo img {
-  height: 2.2rem;
+  height: 1.8rem;
 }
 nav ul {
   display: flex;
@@ -438,6 +440,7 @@ header a svg {
 }
 #more-designs .profiles .link {
   margin-right: 4rem;
+  font-size: 1.8rem;
 }
 
 footer .connect {
@@ -503,6 +506,7 @@ footer .bottom .links .link:first-child {
 }
 .full-case-study p.big {
   font-size: 4rem;
+  line-height: 1.2;
   max-width: 100%;
 }
 .full-case-study img {

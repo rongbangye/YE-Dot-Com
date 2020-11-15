@@ -22,5 +22,8 @@
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.11.0",
     "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "emailjs-com": "^2.6.3"
   }
 }
